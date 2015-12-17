@@ -15,5 +15,11 @@ public class temperature {
 		System.out.print("The Temperature today is ");
 		System.out.print(temp);
 		System.out.println("° Celsius");
+		
+		if(temp<50){
+			System.out.println("you can survive in this weather");
+		}else{
+			System.out.println("you may die due to heat");
+		}
 	}
 }
