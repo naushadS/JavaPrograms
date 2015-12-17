@@ -25,7 +25,8 @@ public class payday {
 			case 4:
 				System.out.println("you will be getting salary by the end of this week");
                 break;	
-           
+           default:
+        	   System.out.println("wrong week number entered.Try again");
 		}
 
 	}
