@@ -1,11 +1,15 @@
 package Naushad;
 
 public class companydetails {
+	String founderName="Naushad Shukoor";
 	public void yearfounded(int yearfounded){
 		System.out.println("Founded:"+yearfounded);
 	}
-	public void founder(){
-		System.out.println("Founder:Naushad Shukoor");
+	public String founderName(){
+		return founderName;
 	}
+	public void founder(){
+		System.out.printf("Founded by %s \n",founderName());
 
+}
 }
