@@ -12,13 +12,14 @@ public class company {
 		System.out.println("*****************");
 		System.out.println("ABC Company Private Ltd:");
 
-		companydetails cd=new companydetails();
+		companydetails cd=new companydetails(1200);
+		cd.founder();
 		
 		System.out.println("what year was this company founded?");
 		yearfounded=input.nextInt();
 		
 		cd.yearfounded(yearfounded);
-		cd.founder();
+		
 		System.out.println("*****************");
 	}
 
