@@ -16,8 +16,10 @@ public class temperature {
 		System.out.print(temp);
 		System.out.println("° Celsius");
 		
-		if(temp>50){
-			System.out.println("its really hot today");
+		if(temp>=60){
+			System.out.println("okay ,you can cook omlette on any hot surface outside today");
+		}else if (temp>=50){
+			System.out.println("damn!its really hot today!");
 		}else{
 			System.out.println("its not that hot today");
 			if(temp<15){
