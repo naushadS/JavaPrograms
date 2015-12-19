@@ -16,6 +16,8 @@ public class temperature {
 		System.out.print(temp);
 		System.out.println("° Celsius");
 		
+		System.out.println(temp>bodytemp? "you will get sick":"you wont get sick");
+		
 		if(temp>=60){
 			System.out.println("okay ,you can cook omlette on any hot surface outside today");
 		}else if (temp>=50){
