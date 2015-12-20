@@ -19,11 +19,10 @@ public class basiccalculator {
 		System.out.println("The Result is "+result);
 		System.out.println("counting zero to result");
 		
-		while(counter<=result){
+		do{
 			System.out.println(counter);
 			counter++;
-			
-		}
+			}while(counter<=result);
 	}
 
 }
