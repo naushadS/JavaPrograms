@@ -28,7 +28,9 @@ public class payday {
 		default:
 			System.out.println("wrong week number entered.Try again");
 			break;
+			
 		}
+		input.close();
 
 	}
 

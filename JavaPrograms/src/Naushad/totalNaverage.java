@@ -18,6 +18,8 @@ public class totalNaverage {
 		average=total/n;
 		System.out.println("total = "+total);
 		System.out.println("average = "+average);
+		
+		input.close();
 	}
 
 }

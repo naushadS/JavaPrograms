@@ -37,6 +37,6 @@ public class temperature {
 			System.out.println("you can survive in this weather");
 		}
 		
-		
+		input.close();
 	}
 }

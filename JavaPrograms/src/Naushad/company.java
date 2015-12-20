@@ -21,6 +21,7 @@ public class company {
 		cd.yearfounded(yearfounded);
 		
 		System.out.println("*****************");
+		input.close();
 	}
 
 }

@@ -23,6 +23,7 @@ public class basiccalculator {
 			System.out.println(counter);
 			counter++;
 			}while(counter<=result);
+        input.close();
 	}
 
 }
