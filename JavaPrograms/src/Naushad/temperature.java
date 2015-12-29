@@ -7,6 +7,24 @@ public class temperature {
 	public static void main(String[] args) {
 		double temp,bodytemp=37;
 		
+		//array creation (Type 1)
+		int tempInCities[]=new int[3];
+		tempInCities[0]=15;
+		tempInCities[1]=20;
+		tempInCities[2]=25;
+		//printing out elements
+		for(int i=0;i<tempInCities.length;i++){
+			System.out.println(tempInCities[i]);
+		};
+				
+		
+		//array creation (Type 2)
+		int tempInCities2[]={15,20,25};
+		//printing out elements
+		for(int i=0;i<tempInCities2.length;i++){
+			System.out.println(tempInCities2[i]);
+		};
+		
 		Scanner input=new Scanner(System.in);
 		System.out.println("Enter todays temperature nigga");
 		temp=input.nextDouble();
