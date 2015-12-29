@@ -27,6 +27,7 @@ public class freqOfDice {
 
         //just to be sure ;)
 		System.out.println("Sum of all the frequencies is "+sum);
+		input.close();
 	}
-
+     
 }
