@@ -20,7 +20,7 @@ public class AESFileEncryption {
 		
 		Scanner in=new Scanner(System.in);
 		
-		System.out.println("Enter the name of the file to be encrypted and transferred:");
+		System.out.println("Enter the name of the file (to be encrypted and transferred):");
 		String filename=in.nextLine();
 		File file=new File(filename+".txt");
 		file.createNewFile();
@@ -31,7 +31,7 @@ public class AESFileEncryption {
         FileOutputStream fos0=new FileOutputStream(filename+".txt");
         fos0.write(x.getBytes(Charset.forName("UTF-8")));
         fos0.close();
-        System.out.println("File Saved!");
+        System.out.println("information saved successfully");
         
         
 		System.out.println("Enter the password to encrypt the file with:");
@@ -98,7 +98,7 @@ public class AESFileEncryption {
 		outFile.flush();
 		outFile.close();
 
-		System.out.println("File Encrypted.");
+		System.out.println("File Encrypted & Transferred successfuly");
 		
 	}
 

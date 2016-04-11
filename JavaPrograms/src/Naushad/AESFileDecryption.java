@@ -2,7 +2,6 @@ package Naushad;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.security.spec.KeySpec;
 import java.util.Scanner;
@@ -20,13 +19,13 @@ public class AESFileDecryption {
 
 		Scanner input=new Scanner(System.in);
 
-		System.out.println("Enter the name of the file to be encrypted and transferred:");
+		System.out.println("Enter the name of the file (to be received & decrypted):");
 		String filename=input.nextLine();
 		
 		File gf=new File(filename+"_encrypted.des");
 		if(gf.exists()){
 		
-		System.out.println("Enter the password to decrypt:");
+		System.out.println("Enter the password to decrypt the file with:");
 		String password=input.nextLine();
 		input.close();
 
