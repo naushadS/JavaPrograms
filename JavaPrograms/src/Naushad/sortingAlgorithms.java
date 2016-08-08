@@ -2,6 +2,7 @@ package Naushad;
 
 import java.io.IOException;
 
+
 public class sortingAlgorithms {
 	 
 
@@ -15,7 +16,38 @@ public class sortingAlgorithms {
 		System.out.println("Before sort:");
 		printArray(array);
 		
-		bubbleSort(array);
+		//bubbleSort(array);
+		selectionSort(array);
+		
+	}
+
+	private static void selectionSort(int array[]) {
+		System.out.println("\nSelection Sort: \n");
+		int n=array.length;
+		for(int pass=1;pass<=n-1;pass++){ //for passes ( requires (n-1) passes )
+			
+			//set 1st element as smallest
+			int small=array[pass-1];
+			int pos=pass-1;
+			
+			//searching the smallest element from the remaining
+			for(int i=pass;i<=n-1;i++){
+				if(small>array[i]){
+					small=array[i];
+					pos=i;
+				}
+			}
+			
+			//swap if found the smallest from the remaining
+			if(array[pass-1]!=small){
+				System.out.println("Swapping "+array[pass-1]+" and "+array[pos]);
+			int temp=array[pass-1];
+			array[pass-1]=array[pos];
+			array[pos]=temp;
+			}
+			System.out.println("After Pass "+pass);
+			printArrayWithIndex(array);
+		}		
 	}
 
 	private static void bubbleSort(int array[]) {
